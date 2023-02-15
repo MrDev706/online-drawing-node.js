@@ -1,0 +1,17 @@
+{
+  "name": "online_editor",
+  "version": "1.0.0",
+  "description": "Remote editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Debashish Dutta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.6.0"
+  }
+}

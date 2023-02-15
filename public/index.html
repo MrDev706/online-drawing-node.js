@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Socket.IO whiteboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas class="whiteboard" ></canvas>
+
+  <div class="colors">
+    <div class="color black"></div>
+    <div class="color red"></div>
+    <div class="color green"></div>
+    <div class="color blue"></div>
+    <div class="color yellow"></div>
+    <button id="btn">Download this</button>
+    <a href="javascript:canvas.toDataURL('image/jpeg');" download="download" >Download as jpeg</a>
+  </div>
+  <div class="rooms">
+  <div >
+    <label for="createRoom">createRoom</label>
+    <input type="text" name="createRoom" id="createRoom" placeholder="Create Room" >
+    <button id="btn-create">Create Room</button>
+  </div>
+  <div>
+    <label for="joinRoom">createRoom</label>
+    <input type="text" name="joinRoom" id="joinRoom" placeholder="Join Room" >
+    <button id="btn-join">Join Room</button>
+  </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="main.js"></script>
+  
+</body>
+</html>
